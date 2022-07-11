@@ -121,6 +121,13 @@ let conf = [
             color_primary : "#ABB2BF",
             color_secondary : "#cfcfcf"
 		},
+		{
+			icon : "fa-solid fa-toilet-paper",
+			href : "https://forum.square-enix.com/ffxiv/forums/778",
+            target : "_self",
+            color_primary : "#ABB2BF",
+            color_secondary : "#cfcfcf"
+		},        
     ]
 }
 ];
