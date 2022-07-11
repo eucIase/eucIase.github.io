@@ -94,13 +94,6 @@ let conf = [
             color_primary : "#ABB2BF",
             color_secondary : "#cfcfcf"
 		}
-		{
-			icon : "fa fa-brands fa-popcorn fa-lg",
-			href : "https://animixplay.to/",
-            target : "_blank",
-            color_primary : "#ABB2BF",
-            color_secondary : "#cfcfcf"
-		}        
 	]
 },
 {
