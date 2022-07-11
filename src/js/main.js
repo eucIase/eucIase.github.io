@@ -115,8 +115,8 @@ let conf = [
 	description_color_secondary : "#E0C285",
 	content : [
 		{
-			icon : "fa fa-solid fa-twitter fa-lg",
-			href : "https://twitter.com/Nevaleeen/likes?lang=en",
+			icon : "fa fa-solid fa-code fa-lg",
+			href : "https://devdocs.io/",
             target : "_self",
             color_primary : "#ABB2BF",
             color_secondary : "#cfcfcf"
