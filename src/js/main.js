@@ -93,7 +93,14 @@ let conf = [
             target : "_blank",
             color_primary : "#ABB2BF",
             color_secondary : "#cfcfcf"
-		}
+		},
+		{
+			icon : " fa-solid fa-film",
+			href : "https://animixplay.to/",
+            target : "_blank",
+            color_primary : "#ABB2BF",
+            color_secondary : "#cfcfcf"
+		},              
 	]
 },
 {
@@ -108,40 +115,12 @@ let conf = [
 	description_color_secondary : "#E0C285",
 	content : [
 		{
-			icon : "fa fa-solid fa-code fa-lg",
-			href : "https://devdocs.io/",
+			icon : "fa-brands fa-twitter",
+			href : "https://twitter.com/Nevaleeen/likes?lang=en",
             target : "_self",
             color_primary : "#ABB2BF",
             color_secondary : "#cfcfcf"
 		},
-		{
-			icon : "fa fa-brands fa-css3-alt fa-lg",
-			href : "https://developer.mozilla.org/en-US/docs/Learn/CSS/",
-            target : "_blank",
-            color_primary : "#ABB2BF",
-            color_secondary : "#cfcfcf"
-		},
-		{
-			icon : "fa fa-brands fa-stack-overflow fa-lg",
-			href : "https://stackoverflow.com/",
-            target : "_blank",
-            color_primary : "#ABB2BF",
-            color_secondary : "#cfcfcf"
-		},
-		{
-			icon : "fa fa-brands fa-bootstrap fa-lg",
-			href : "https://getbootstrap.com/docs/5.2/getting-started/introduction/",
-            target : "_blank",
-            color_primary : "#ABB2BF",
-            color_secondary : "#cfcfcf"
-		},
-		{
-			icon : "fa fa-brands fa-npm fa-lg",
-			href : "https://www.npmjs.com/",
-            target : "_blank",
-            color_primary : "#ABB2BF",
-            color_secondary : "#cfcfcf"
-		}
     ]
 }
 ];
