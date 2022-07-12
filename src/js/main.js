@@ -6,7 +6,7 @@ let conf = [
     icon_color_primary : "#ABB2BF",
     icon_color_secondary : "#85C2E0",
     title : "Web Programme",
-    description : "GIT|Dropbox|Drive",
+    description : "GIT|Dropbox|Drive|Tuta",
     title_color_primary : "#ABB2BF",
     title_color_secondary : "#cfcfcf",
     description_color_primary : "#c0c0c0",
@@ -33,6 +33,13 @@ let conf = [
             color_primary : "#ABB2BF",
             color_secondary : "#cfcfcf"
 		},
+        {
+			icon : "fa fa-solid fa-envelope",
+			href : "https://mail.tutanota.com/",
+            target : "_blank",
+            color_primary : "#ABB2BF",
+            color_secondary : "#cfcfcf"
+		},        
 	]
 },
 {
