@@ -55,7 +55,7 @@ let conf = [
 	content : [
 		{
 			icon : "fa fa-brands fa-reddit-alien fa-lg",
-			href : "https://reddit.com/'",
+			href : "https://reddit.com/",
             target : "_self",
             color_primary : "#ABB2BF",
             color_secondary : "#cfcfcf"
