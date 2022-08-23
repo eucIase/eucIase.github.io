@@ -1,30 +1,182 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>
-			Start page
-		</title>
-		<meta name="author" content="Dusty"/>
-		<meta name="Description" content="Simple parallax startpage"/>
-		<link rel="icon" type="image/x-icon" href="src/img/favicons/favicon.ico"/>
-		<link rel="preload" href="src/css/main.css" as="style"/>
-		<link rel="preload" href="src/css/cursor.css" as="style"/>
-		<link rel="stylesheet" href="src/css/main.css"/>
-		<link rel="stylesheet" href="src/css/cursor.css"/>
-		<script src="src/js/main.js" defer></script>
-		<script src="src/js/cursor.js" defer></script>
-        <link rel="stylesheet" href="src/css/fontawesome/css/all.min.css">
-	</head>
-	<body>
-		<div class="cursor">
-			<div class="cursor-icon">
+<!--Starpage by -->
+<html id="html" data-theme="default">
+<head>
+	<meta charset="utf-8">
+	<title>New Tab</title>
+	<link rel="stylesheet" style="text/css" href="general.css" />
+</head>
+<body>
+	<div class="main" style="display: block">
+		<div class="image-wrapper">
+
+			<div class="mySlides fade">
+				<img src="img/side1.gif">
 			</div>
+
+			<a class="next" onclick="plusSlides(1)">&#8734;</a>
 		</div>
-		<div class="bg">
-			<div id="list"></div>
-			<div id="icons"></div>
+		<br>
+
+		<header>
+			<br>
+			<h1 ><span id="greet">Hello</span>, <span class="flair">Mhmd Ali</span></h1>
+		</header>
+
+		<nav>
+			<br>
+
+			<ul class="green">
+				<li style="font-size:22px">Design</li>
+				<li><a href="https://behance.com/">Behance</a></li>
+				<li><a href="https://dribbble.com/">Dribbble</a></li>
+				<li><a href="https://www.awwwards.com/">Awwwards</a></li>
+				<li><a href="https://httpster.net/">Httpster</a></li>
+				<li><a href="https://land-book.com/">Land book</a></li>
+				<li><a href="https://www.admiretheweb.com/">AdmiretheWeb</a></li>
+			</ul>
+
+			<ul class="red">
+				<li style="font-size:22px">Tech</li>
+				<li><a href="https://dev.to/">dev.to</a></li>
+				<li><a href="https://app.daily.dev/">daily.dev</a></li>
+				<li><a href="https://www.producthunt.com">producthunt</a></li>
+				<li><a href="https://free-for.dev/">free-for.dev</a></li>
+				<li><a href="https://tiny-helpers.dev/">tiny-helpers</a></li>
+				<li><a href="https://devresourc.es/">devresourc.es</a></li>
+			</ul>
+
+			<ul class="blue">
+				<li style="font-size:22px">Social</li>
+				<li><a href="https://www.youtube.com">Youtube</a></li>
+				<li><a href="https://github.com/">Github</a></li>
+				<li><a href="https://linkedin.com/">LinkedIn</a></li>
+				<li><a href="https://twitter.com/">Twitter</a></li>
+				<li><a href="https://reddit.com/">Reddit</a></li>
+				<li><a href="https://discord.com/">Discord</a></li>
+			</ul>
+
+			<ul class="yellow">
+				<li style="font-size:22px">Else</li>
+				<li><a href="https://mail.google.com">Gmail</a></li>
+				<li><a href="https://figma.com">Figma</a></li>
+				<li><a href="https://temp-mail.com/">Temp Mail</a></li>
+				<li><a href="https://monkeytype.com/">Monkeytype</a></li>
+				<li><a href="https://keep.google.com">Google Keep</a></li>
+				<li><a href="https://soundcloud.com/">Soundcloud</a></li>
+			</ul>
+		</nav>
+
+		<div class="codes" id="codes">
+			<script>
+				function greeting(hour) {
+					var greetingText;
+					if (hour >= 5 && hour <= 11) {
+						greetingText = "Good Morning";
+					} else if (hour >= 12 && hour <= 16) {
+						greetingText = "Good Afternoon";
+					} else if ((hour >= 17 && hour <= 23) || (hour >= 0 && hour <= 4)) {
+						greetingText = "Good Evening";
+					} else {
+						greetingText = "Hello";
+					}
+					return greetingText;
+				}
+
+			document.getElementById('greet').innerText = greeting((new Date()).getHours());
+
+			//document.getElementById("main").innerHTML = Date();
+			function updateClock() {
+				var days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+				var m = new Date();
+				var dateString =
+				(days[ m.getDay() ]) + " " +
+				("0" + m.getDate()).slice(-2) + "/" +
+				("0" + (m.getMonth()+1)).slice(-2) +"/"+
+				m.getFullYear() +" "+
+				("0" + m.getHours()).slice(-2) + ":" +
+				("0" + m.getMinutes()).slice(-2) + ":" +
+				("0" + m.getSeconds()).slice(-2);
+
+				// set the content of the element with the ID codes to the formatted string
+				document.getElementById('codes').innerHTML = dateString;
+
+				// call this function again in 1000ms
+				setTimeout(updateClock, 1000);
+			}
+			updateClock(); // initial call
+
+			// Set local storage
+			var slideIx = Number(localStorage.getItem('slideIndex') || 1);
+
+			var slideIndex = slideIx;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+				localStorage.setItem('slideIndex', slideIndex);
+				console.log(localStorage.getItem('slideIndex'));
+			}
+
+			// Show slides
+			function showSlides(n) {
+				var i;
+				var slide = document.querySelector(".mySlides");
+				var reqdVars = document.querySelector(".reqdVar");
+				if (n > 23) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = 23;
+				}				
+				slide.querySelector("img").src = `img/side${slideIndex}.gif`
+				console.log(slideIndex)
+			}
+
+			// Theming
+			const html = document.getElementById("html");
+
+			// Themes list
+			const colorchemes = ["default", "gruvbox", "nord", "catppuccin"];
+
+			let changeTheme = (e) => {
+				// Change theme key
+				if (e.key == "c") {
+					let currentThemeIndex = colorchemes.findIndex(color => color === html.dataset.theme );
+					currentThemeIndex = (currentThemeIndex >= colorchemes.length - 1) ? 0 : currentThemeIndex + 1 ;
+					html.dataset.theme = colorchemes[currentThemeIndex];
+					localStorage.setItem("themeIndex", currentThemeIndex);
+
+					let havematched = true;
+
+					// Select thme slide by slide index.
+					switch (currentThemeIndex) {
+						case 0:
+						slideIndex= 1;
+						break;
+						case 1:
+						slideIndex=12;
+						break;
+						case 2:
+						slideIndex=10;
+						break;
+            case 3:
+						slideIndex=21;
+						break;
+						default:
+            havematched = false;
+							}
+							if (havematched){
+							localStorage.setItem("slideIndex", slideIndex);
+							showSlides(slideIndex);
+					}
+				}
+			}
+			const currentTheme = localStorage.getItem("themeIndex");
+			html.dataset.theme = colorchemes[currentTheme || 0];
+			document.addEventListener("keyup", e => changeTheme(e))
+			</script>
 		</div>
 	</body>
-</html>
+	</html>

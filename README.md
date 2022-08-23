@@ -1,23 +1,35 @@
 # Startpage
 
-Simple startpage
+## This is [mhmdali102's](https://github.com/mhmdali102) fork of mtwb47's [startpage](https://github.com/mtwb47/mtwb47.github.io) with [gruvbox](https://github.com/morhetz/gruvbox) and [nord](https://github.com/arcticicestudio/nord) theme.
 
-## Table of content : 
+### Change Theme:
 
-- [General info](#general-info)
-- [Preview](#preview)
-- [Usage](#usage)
+To change the theme press "c".
 
-# General info
+### Gruvbox theme:
 
-This is a startpage with parallax background. It's written in plain `HTML / CSS / JS`, so you can copy it without any preparations and building. Inspired by [this startpage](https://github.com/zombieFox/voltTab). 
+![gruvbox theme](gruvbox.png)
 
-# Preview
+### Nord theme:
 
-![Preview](preview/preview.gif)
+![nord theme](nord.png)
 
-# Usage
+### Catppuccin theme
 
-1. Download `index.html` and `src` folder
-2. Configure `var conf` in `src/js/main.js`
-3. Launch `index.html`
+![catppuccin them](catppuccin.png)
+
+### Live Demo: <a href="http://BeakBryno7.github.io/startpage/">Demo</a>
+
+### Default Home
+
+<img src="home.jpg" alt="Home" width="100%"/>
+
+### Preview
+
+<img src="home.gif" alt="Preview" width="100%"/>
+
+This is a fork of RamenMaestro's [startpage](https://github.com/RamenMaestro/startpage) with a image scroll option and larger option size.
+
+## Credits
+
+Images used in the sidebar are by background artist [Waneella](https://twitter.com/waneella_).
